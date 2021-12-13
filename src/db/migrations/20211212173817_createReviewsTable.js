@@ -4,10 +4,18 @@ exports.up = function (knex) {
     table.text("content");
     table.integer("score");
     table.integer("critic_id").unsigned().notNullable();
-    table.foreign("critic_id").references("critic_id").inTable("critics");
+    table
+      .foreign("critic_id")
+      .references("critic_id")
+      .inTable("critics")
+      .onDelete("cascade");
 
     table.integer("movie_id").unsigned().notNullable();
-    table.foreign("movie_id").references("movie_id").inTable("movies");
+    table
+      .foreign("movie_id")
+      .references("movie_id")
+      .inTable("movies")
+      .onDelete("cascade");
 
     table.timestamps(true, true);
   });
