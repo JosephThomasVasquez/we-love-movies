@@ -43,7 +43,7 @@ const listMovieReviews = (movieId) => {
     .then((critics) => critics.map((critic) => addCritcs(critic))); // map through critics and map properties to its own object using mapProperties() helper function
 };
 
-// list all theaters that have movieId
+// list alltheaters that have movieId
 const listTheatersWithMovie = (movieId) => {
   return knex("theaters as t")
     .join("movies_theaters as mt", "t.theater_id", "mt.theater_id")
