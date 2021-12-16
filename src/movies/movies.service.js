@@ -38,7 +38,7 @@ const listMovieReviews = (movieId) => {
   return knex("movies as m")
     .join("reviews as r", "m.movie_id", "r.movie_id")
     .join("critics as c", "c.critic_id", "r.critic_id")
-    .select("m.*", "c.*")
+    .select("r.*", "c.*")
     .where({ "r.movie_id": movieId })
     .then((critics) => critics.map((critic) => addCritcs(critic))); // map through critics and map properties to its own object using mapProperties() helper function
 };
