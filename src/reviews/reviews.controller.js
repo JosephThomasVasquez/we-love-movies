@@ -18,6 +18,10 @@ const reviewExists = async (req, res, next) => {
   next({ status: 404, message: `Review cannot be found.` });
 };
 
+// =============================================================================================
+// Resources functions =========================================================================
+// =============================================================================================
+
 // read movie from movieId passed from res.locals
 const read = async (req, res, next) => {
   const { review: data } = res.locals;
