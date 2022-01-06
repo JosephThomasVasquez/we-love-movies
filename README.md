@@ -4,6 +4,9 @@
 
 ### Demo here: [Demo](https://we-love-movies-frontend.herokuapp.com/)
 
-The Front End Application is here:
+The Front End Repo is here:
 
 [Front End Project](https://github.com/JosephThomasVasquez/starter-movie-front-end)
+
+Preview:
+![Desktop and Mobile preview](https://github.com/JosephThomasVasquez/starter-movie-front-end/blob/main/public/images/we-love-movies-cover.png)
